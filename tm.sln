@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{75ABA9BC-7F47-4F31-8BD8-2A49B6B34B76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AAF54A87-FB1E-45ED-822E-9C86331A249E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionsManager.Domain", "src\TransactionsManager.Domain\TransactionsManager.Domain.csproj", "{5EFEA81A-824C-4D1B-A04E-CD001B41AA88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionsManager.Repository.EF", "src\TransactionsManager.Repository.EF\TransactionsManager.Repository.EF.csproj", "{F82529BF-5152-477A-9C20-718952AB410D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionsManager.Services", "src\TransactionsManager.Services\TransactionsManager.Services.csproj", "{83CBF91F-45D9-43FE-AF6B-9AEA2074E099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionsManager.UI", "src\TransactionsManager.UI\TransactionsManager.UI.csproj", "{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EFEA81A-824C-4D1B-A04E-CD001B41AA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFEA81A-824C-4D1B-A04E-CD001B41AA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFEA81A-824C-4D1B-A04E-CD001B41AA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFEA81A-824C-4D1B-A04E-CD001B41AA88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F82529BF-5152-477A-9C20-718952AB410D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F82529BF-5152-477A-9C20-718952AB410D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F82529BF-5152-477A-9C20-718952AB410D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F82529BF-5152-477A-9C20-718952AB410D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CBF91F-45D9-43FE-AF6B-9AEA2074E099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CBF91F-45D9-43FE-AF6B-9AEA2074E099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CBF91F-45D9-43FE-AF6B-9AEA2074E099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CBF91F-45D9-43FE-AF6B-9AEA2074E099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5EFEA81A-824C-4D1B-A04E-CD001B41AA88} = {75ABA9BC-7F47-4F31-8BD8-2A49B6B34B76}
+		{F82529BF-5152-477A-9C20-718952AB410D} = {75ABA9BC-7F47-4F31-8BD8-2A49B6B34B76}
+		{83CBF91F-45D9-43FE-AF6B-9AEA2074E099} = {75ABA9BC-7F47-4F31-8BD8-2A49B6B34B76}
+		{091FD5DD-70FC-4DC8-9F49-053BE312BE3A} = {75ABA9BC-7F47-4F31-8BD8-2A49B6B34B76}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAC3B723-DEE9-403E-9E0C-A9087CADE496}
+	EndGlobalSection
+EndGlobal

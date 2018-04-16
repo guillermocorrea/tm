@@ -1,0 +1,77 @@
+﻿@model X.PagedList.IPagedList<TransactionsManager.Domain.Transaction>;
+@using TransactionsManager.UI.Infrastructure;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Transaction Manager</h1>
+
+@if (User.IsAssistant() || User.IsAdministrator())
+{
+    <form asp-action="Index" method="get">
+        <div class="form-actions no-color">
+            <p>
+                @{
+                    bool? currentIsFraud = ViewBag.isFraud as bool?;
+                    bool isFraud = currentIsFraud.HasValue ? currentIsFraud.Value : false;
+                    string currentNameDest = ViewBag.searchNameDest as string;
+                }
+                Search by
+                <label for="isFraud">IsFraud:</label>
+                <input asp-for="@isFraud" />
+                <label for="SearchNameDest">SearchNameDest:</label>
+                <input type="text" name="SearchNameDest" value="@currentNameDest" />
+                <input type="submit" value="Search" class="btn btn-default" /> |
+                <a asp-action="Index">Back to Full List</a>
+            </p>
+        </div>
+    </form>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Step</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>NameOrig</th>
+            <th>OldbalanceOrg</th>
+            <th>NewbalanceOrig</th>
+            <th>NameDest</th>
+            <th>OldbalanceDest</th>
+            <th>NewbalanceDest</th>
+            <th>IsFraud</th>
+            <th>IsFlaggedFraud</th>
+            <th>&nbsp;</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Step</td>
+                <td>@item.Type</td>
+                <td>@item.Amount</td>
+                <td>@item.NameOrig</td>
+                <td>@item.OldbalanceOrg</td>
+                <td>@item.NewbalanceOrig</td>
+                <td>@item.NameDest</td>
+                <td>@item.OldbalanceDest</td>
+                <td>@item.NewbalanceDest</td>
+                <td>@item.IsFraud</td>
+                <td>@item.IsFlaggedFraud</td>
+                <td>
+                    @if (User.IsManager() || User.IsAdministrator())
+                    {
+                        <form asp-action="MarkAsFraud" method="post">
+                            <input asp-for="@item.Id" type="hidden" />
+                            <input type="submit" value="Mark as fraud" />
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

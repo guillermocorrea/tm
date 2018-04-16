@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0-preview2-final" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
+    <PackageReference Include="X.PagedList" Version="7.2.4" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="7.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TransactionsManager.Domain\TransactionsManager.Domain.csproj" />
+    <ProjectReference Include="..\TransactionsManager.Repository.EF\TransactionsManager.Repository.EF.csproj" />
+    <ProjectReference Include="..\TransactionsManager.Services\TransactionsManager.Services.csproj" />
+  </ItemGroup>
+
+</Project>

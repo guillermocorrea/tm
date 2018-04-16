@@ -1,0 +1,83 @@
+﻿@model TransactionsManager.Domain.Transaction
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+<h4>Transaction</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Register">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Step" class="control-label"></label>
+                <input asp-for="Step" class="form-control" />
+                <span asp-validation-for="Step" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameOrig" class="control-label"></label>
+                <input asp-for="NameOrig" class="form-control" />
+                <span asp-validation-for="NameOrig" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OldbalanceOrg" class="control-label"></label>
+                <input asp-for="OldbalanceOrg" class="form-control" />
+                <span asp-validation-for="OldbalanceOrg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewbalanceOrig" class="control-label"></label>
+                <input asp-for="NewbalanceOrig" class="form-control" />
+                <span asp-validation-for="NewbalanceOrig" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameDest" class="control-label"></label>
+                <input asp-for="NameDest" class="form-control" />
+                <span asp-validation-for="NameDest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OldbalanceDest" class="control-label"></label>
+                <input asp-for="OldbalanceDest" class="form-control" />
+                <span asp-validation-for="OldbalanceDest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewbalanceDest" class="control-label"></label>
+                <input asp-for="NewbalanceDest" class="form-control" />
+                <span asp-validation-for="NewbalanceDest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsFraud" class="control-label"></label>
+                <input asp-for="IsFraud" class="form-control" />
+                <span asp-validation-for="IsFraud" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsFlaggedFraud" class="control-label"></label>
+                <input asp-for="IsFlaggedFraud" class="form-control" />
+                <span asp-validation-for="IsFlaggedFraud" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
