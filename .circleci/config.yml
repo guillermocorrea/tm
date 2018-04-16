@@ -12,7 +12,7 @@ jobs:
       - checkout
       - run: dotnet restore
       - run: dotnet build
-      #- run: dotnet test test/TransactionsManager.Domain.Test/TransactionsManager.Domain.Test.csproj
+      - run: dotnet test test/TransactionsManager.Domain.Tests/TransactionsManager.Domain.Tests.csproj
       #- run: sh build.sh
       - setup_remote_docker:   # (2)
           docker_layer_caching: true # (3)
