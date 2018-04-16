@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{75ABA9BC-7F4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AAF54A87-FB1E-45ED-822E-9C86331A249E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionsManager.Domain", "src\TransactionsManager.Domain\TransactionsManager.Domain.csproj", "{5EFEA81A-824C-4D1B-A04E-CD001B41AA88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionsManager.Domain", "src\TransactionsManager.Domain\TransactionsManager.Domain.csproj", "{5EFEA81A-824C-4D1B-A04E-CD001B41AA88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionsManager.Repository.EF", "src\TransactionsManager.Repository.EF\TransactionsManager.Repository.EF.csproj", "{F82529BF-5152-477A-9C20-718952AB410D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionsManager.Repository.EF", "src\TransactionsManager.Repository.EF\TransactionsManager.Repository.EF.csproj", "{F82529BF-5152-477A-9C20-718952AB410D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionsManager.Services", "src\TransactionsManager.Services\TransactionsManager.Services.csproj", "{83CBF91F-45D9-43FE-AF6B-9AEA2074E099}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionsManager.Services", "src\TransactionsManager.Services\TransactionsManager.Services.csproj", "{83CBF91F-45D9-43FE-AF6B-9AEA2074E099}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionsManager.UI", "src\TransactionsManager.UI\TransactionsManager.UI.csproj", "{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionsManager.UI", "src\TransactionsManager.UI\TransactionsManager.UI.csproj", "{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionsManager.Domain.Tests", "test\TransactionsManager.Domain.Tests\TransactionsManager.Domain.Tests.csproj", "{38336481-B119-48B0-9EA4-3375E71149C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{091FD5DD-70FC-4DC8-9F49-053BE312BE3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38336481-B119-48B0-9EA4-3375E71149C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38336481-B119-48B0-9EA4-3375E71149C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38336481-B119-48B0-9EA4-3375E71149C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38336481-B119-48B0-9EA4-3375E71149C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{F82529BF-5152-477A-9C20-718952AB410D} = {75ABA9BC-7F47-4F31-8BD8-2A49B6B34B76}
 		{83CBF91F-45D9-43FE-AF6B-9AEA2074E099} = {75ABA9BC-7F47-4F31-8BD8-2A49B6B34B76}
 		{091FD5DD-70FC-4DC8-9F49-053BE312BE3A} = {75ABA9BC-7F47-4F31-8BD8-2A49B6B34B76}
+		{38336481-B119-48B0-9EA4-3375E71149C2} = {AAF54A87-FB1E-45ED-822E-9C86331A249E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DAC3B723-DEE9-403E-9E0C-A9087CADE496}

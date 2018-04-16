@@ -39,7 +39,7 @@ Web API
 
 Unit Tests
 ==========
-* In a cmd hit `dotnet test`
+* In a cmd hit `dotnet test test/TransactionsManager.Domain.Tests/TransactionsManager.Domain.Tests.csproj`
 
 Dataset
 =======
