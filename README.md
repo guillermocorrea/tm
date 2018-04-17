@@ -17,7 +17,7 @@ Set up the Database
 Run the Application
 ===================
 * Make sure to clone and run the [TransactionsManagerIdentityServer](https://github.com/guillermocorrea/TransactionsManagerIdentityServer) repo.
-* In a cmd hit `dotnet restore` and `dotnet run src/TransactionsManager.UI/TransactionsManager.UI.csproj` or open the solution in Visual Studio 2017 and run the application from there.
+* In a cmd hit `dotnet restore` and `dotnet run --project src/TransactionsManager.UI/TransactionsManager.UI.csproj` or open the solution in Visual Studio 2017 and run the application from there.
 * Open a browser at http://localhost:5050/
 
 Users
